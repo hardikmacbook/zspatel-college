@@ -24,7 +24,7 @@
         /></a>
 
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <!-- <i class="fa fa-times" onclick="hidemenu()"></i> -->
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="/htmlfiles/about.html">ABOUT</a></li>
@@ -34,7 +34,20 @@
             <li><a href="https://zspatelcollege.co.in/evidya/login.php" target="_blank">eVidya Login</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        <div class="navbar">
+          <button id="toggleBtn">&#9776; Menu</button>
+          <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/htmlfiles/about.html">About</a></li>
+            <li><a href="/htmlfiles/course.html">COURSE</a></li>
+            <li><a href="/htmlfiles/blog.html">BLOG</a></li>
+            <li><a href="/htmlfiles/contact.html">CONTACT</a></li>
+            <li><a href="https://zspatelcollege.co.in/evidya/login.php" target="_blank">eVidya Login</a>
+          </ul>
+        </div>
+
+        <!-- <i class="fa fa-bars" onclick="showmenu()"></i> -->
       </nav>
 
       <div class="text-box">
@@ -46,7 +59,7 @@
           Flight. Experience Education Beyond Limits - Welcome to Smt Z.S. Patel
           College of Management And Technology.
         </p>
-        <a href="about.html" class="hero-btn">About us To Know More</a>
+        <a href="/htmlfiles/about.html" class="hero-btn">About us To Know More</a>
       </div>
     </section>
 
@@ -333,10 +346,10 @@
         <div class="dobule-link">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Course</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/htmlfiles/about.html">About</a></li>
+            <li><a href="/htmlfiles/course.html">Course</a></li>
+            <li><a href="/htmlfiles/blog.html">Blog</a></li>
+            <li><a href="/htmlfiles/contact.html">contact</a></li>
             <li><a href="https://zspatelcollege.co.in/evidya/login.php" target="_blank">eVidya Login</a></li>
 
           </ul>
@@ -359,9 +372,9 @@
         </ul>
 
         <a href="https://www.instagram.com/4kinghardikop/"><i id="fafa"class="fa-brands  fa-instagram"></i></a>
-        <a href=""><i id="fafa" class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/qr/NVZAHU7DMBH5M1?autoload=1&app_absent=0"><i id="fafa" class="fa-brands fa-whatsapp"></i></a>
         <a href="https://github.com/hardikmacbook"><i id="fafa" class="fa-brands fa-github"></i></a>
-        <a href=""><i id="fafa" class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fzspatelcollege%2F"><i id="fafa" class="fa-brands fa-facebook"></i></a>
 
                        <!-- <div class="social pt-1">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -384,16 +397,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
    </body>
-  <!------------------ JS FOR TOGGLE MENU ----------------->
+  
+   <!------------------ JS FOR TOGGLE MENU ----------------->
   <script>
-    var navLinks = document.getElementById("navLinks");
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("toggleBtn");
+      const menu = document.querySelector(".menu");
 
-    function showmenu() {
-      navLinks.style.right = "0";
-    }
-
-    function hidemenu() {
-      navLinks.style.right = "-200px";
-    }
+      toggleBtn.addEventListener("click", function () {
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      });
+    });
   </script>
 </html>
