@@ -744,7 +744,7 @@ h3{
 .h2{
     color: #000;
     margin-left: 100px;
-    font-weight: bolder;
+    font-weight: bolder ;
 }
 .p a{
     text-decoration: none;
@@ -787,8 +787,11 @@ h3{
     color: #f6783a;
 }
 #fafa{
-    color: #f6783a;
+    color: white;
     margin-right: 20px;
+}
+#fafa:hover{
+    color: #f6783a;
 }
 
 .footer-section .footer-top {
