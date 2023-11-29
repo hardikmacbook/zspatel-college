@@ -81,8 +81,8 @@ nav{
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 0.8px solid #fff;
+    color: #f6783a;
+    border: 0.8px solid #f6783a;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -90,8 +90,10 @@ nav{
     border-radius: 15px;
 }
 .hero-btn:hover{
+    border: 1px solid #f6783a;
     background:  #f6783a;
-    transition: 3s;
+    color: #fff;
+    transition: 1s;
 }
 
 nav .fa{
@@ -949,9 +951,6 @@ h3{
 
 @media(max-width: 700px){
     .text-box h1{
-        display: none;
-    }
-    .text-box p{
         display: none;
     }
     .nav-links ul li{
