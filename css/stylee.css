@@ -48,7 +48,7 @@ nav{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f6783a;
+    background: red;
     display: block;
     margin: auto;
     transition: 0.8s;
@@ -81,8 +81,8 @@ nav{
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #f6783a;
-    border: 0.8px solid #f6783a;
+    color: white;
+    border: 0.8px solid white;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -90,8 +90,8 @@ nav{
     border-radius: 15px;
 }
 .hero-btn:hover{
-    border: 1px solid #f6783a;
-    background:  #f6783a;
+    border: 1px solid red;
+    background:  red;
     color: #fff;
     transition: 1s;
 }
@@ -788,14 +788,14 @@ h3{
     text-decoration: none;
 }
 .con:hover{
-    color: #f6783a;
+    color: red;
 }
 #fafa{
     color: white;
     margin-right: 20px;
 }
 #fafa:hover{
-    color: #f6783a;
+    color: red;
 }
 
 .footer-section .footer-top {
@@ -820,7 +820,7 @@ h3{
 }
 
 .footer-section .copyright p a:hover {
-	color: #f6783a;
+	color: red;
 }
 
 .footer-widget .fw-title {
@@ -865,7 +865,7 @@ h3{
 }
 
 .footer-widget .dobule-link ul a:hover {
-	color: #f6783a;
+	color: red;
 }
 
 .footer-widget .dobule-link ul li:last-child a {
